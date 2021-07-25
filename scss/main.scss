@@ -1,0 +1,170 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&family=Exo:ital,wght@0,400;0,500;1,500&display=swap");
+
+@import "variables";
+@import "extends";
+@import "defaults";
+@import "buttons";
+@import "covers";
+@import "forms";
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: $primary;
+  padding: 10px;
+}
+
+nav {
+  &.navbar {
+    @extend %space-between;
+    align-items: center;
+    height: 50px;
+    .logo {
+      span {
+        color: $white;
+        font-size: 30px;
+        font-family: $font-exo;
+        font-style: italic;
+        padding: 10px;
+      }
+    }
+
+    .nav-menu {
+      .menu-list {
+        @extend %space-between;
+        .menu-item {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.profile-wrapper {
+  padding: 40px;
+  @extend %space-around;
+  align-items: center;
+  background-color: $bg-profile;
+  color: $white;
+  span {
+    font-family: $font-primary;
+  }
+  .add-fav {
+    i {
+      color: red;
+    }
+    :hover {
+      i {
+        color: $white;
+      }
+    }
+  }
+  .remove-fav {
+    :hover {
+      i {
+        color: red;
+      }
+    }
+  }
+}
+
+//Count Fav
+.count-fav {
+  display: flex;
+  justify-content: space-around;
+  span {
+    margin-right: 4px;
+  }
+}
+//My Bio Section
+.my-bio {
+  display: block;
+  background-color: $bg-bio;
+  color: $white;
+  padding: 40px;
+  @extend %title;
+  p {
+    padding: 20px 0;
+  }
+  h2 {
+    @extend %title;
+  }
+}
+
+//Image Wrapper
+.image-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.listing-wrapper {
+  font-size: 16px;
+  background-color: $bg-table;
+  color: $black;
+  h2 {
+    @extend %title;
+  }
+}
+
+//Table Styling
+table {
+  width: 100%;
+  text-align: center;
+  border: 2px solid $table-border;
+  th,
+  td {
+    padding: 5px;
+    border: 1px dotted $table-border;
+  }
+  td:first-child {
+    font-weight: bold;
+  }
+  a {
+    color: $black;
+  }
+}
+
+//section styles
+section {
+  margin: 20px 0px;
+}
+
+//Icons
+.icons {
+  margin-right: 10px;
+  .heart,
+  .trash {
+    &:hover {
+      color: red;
+    }
+  }
+}
+//Links
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+//Footer
+footer {
+  .copyright {
+    background: $primary;
+    color: $white;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+  }
+}

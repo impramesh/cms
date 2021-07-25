@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400&family=Exo:ital,wght@0,400;0,500;1,500&display=swap");
+.container-cover .cover-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+nav.navbar, nav.navbar .nav-menu .menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-bio, .my-bio h2, .listing-wrapper h2 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container-cover .cover-wrapper {
+  padding: 90px;
+}
+
+.container-cover .cover-wrapper .cover-icon {
+  color: #0e83cd;
+  font-size: 40px;
+  padding: 20px;
+  border: 4px dotted #2a2a2a;
+}
+
+.container-cover .cover-wrapper h3:not(:last-child) {
+  margin: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+}
+
+ul.menu-list {
+  list-style-type: none;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #0e83cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #2a2a2a;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: 3px solid #2a2a2a;
+  background-color: #27ae60;
+}
+
+.btn-submit {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  border: 3px solid #2a2a2a;
+  padding: 15px 35px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-submit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-submit:hover {
+  border: 3px solid #2a2a2a;
+  background-color: #d4d4d4;
+}
+
+.container-cover {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.container-cover .cover-wrapper {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  flex-direction: column;
+}
+
+form > .form-wrapper {
+  color: #000;
+  padding: 20px;
+  border: 3px dashed #000;
+  width: 600px;
+  margin: auto;
+}
+
+form > .form-wrapper.register {
+  background-color: #0e83cd;
+  color: #fff;
+}
+
+form > .form-wrapper.add-contact {
+  background-color: #27ae60;
+}
+
+form > .form-wrapper h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+form > .form-wrapper .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+}
+
+form > .form-wrapper .form-group input.form-control {
+  padding: 10px;
+  background-color: #d4d4d4;
+}
+
+form > .form-wrapper .form-group input::placeholder {
+  color: #000;
+  font-style: italic;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #0e83cd;
+  padding: 10px;
+}
+
+nav.navbar {
+  align-items: center;
+  height: 50px;
+}
+
+nav.navbar .logo span {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+  font-style: italic;
+  padding: 10px;
+}
+
+nav.navbar .nav-menu .menu-list .menu-item {
+  margin: 0 10px;
+}
+
+.profile-wrapper {
+  padding: 40px;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.profile-wrapper span {
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-wrapper .add-fav i {
+  color: red;
+}
+
+.profile-wrapper .add-fav :hover i {
+  color: #fff;
+}
+
+.profile-wrapper .remove-fav :hover i {
+  color: red;
+}
+
+.count-fav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.count-fav span {
+  margin-right: 4px;
+}
+
+.my-bio {
+  display: block;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 40px;
+}
+
+.my-bio p {
+  padding: 20px 0;
+}
+
+.image-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-wrapper {
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+table th,
+table td {
+  padding: 5px;
+  border: 1px dotted #000;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
+
+table a {
+  color: #000;
+}
+
+section {
+  margin: 20px 0px;
+}
+
+.icons {
+  margin-right: 10px;
+}
+
+.icons .heart:hover,
+.icons .trash:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .copyright {
+  background: #0e83cd;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+.container-cover {
+  min-height: 100vh; // height of the browser viewport
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-page;
+
+  .cover-wrapper {
+    font-family: $font-primary;
+    font-weight: 300;
+    flex-direction: column;
+    @extend %align-center;
+    @extend %cover-page;
+  }
+}

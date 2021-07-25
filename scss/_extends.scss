@@ -1,0 +1,31 @@
+%align-center {
+  display: flex;
+  align-items: center;
+}
+%space-between {
+  display: flex;
+  justify-content: space-between;
+}
+%space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+%title {
+  padding: 10px 0;
+  text-align: center;
+}
+
+//Cover page design
+%cover-page {
+  padding: 90px;
+  .cover-icon {
+    color: $primary;
+    font-size: 40px;
+    padding: 20px;
+    border: 4px dotted $border;
+  }
+  h3:not(:last-child) {
+    margin: 5px;
+  }
+}

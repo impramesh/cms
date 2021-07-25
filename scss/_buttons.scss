@@ -1,0 +1,35 @@
+.btn {
+  font-family: $font-primary;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $border;
+  padding: 15px 35px;
+  cursor: pointer;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover {
+    border: 3px solid $border;
+    background-color: $hover;
+  }
+}
+
+.btn-submit {
+  font-family: $font-primary;
+  display: block;
+  border: 3px solid $border;
+  padding: 15px 35px;
+  width: 100%;
+  cursor: pointer;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover {
+    border: 3px solid $border;
+    background-color: $white-dark;
+  }
+}
